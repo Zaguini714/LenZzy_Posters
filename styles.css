@@ -527,11 +527,12 @@ h3 {
 }
 
 .poster-idea-card img {
-  background: #05070b;
+  aspect-ratio: 2 / 3;
+  background: var(--paper);
   display: block;
   height: auto;
-  max-height: 620px;
   object-fit: contain;
+  object-position: center;
   width: 100%;
 }
 
