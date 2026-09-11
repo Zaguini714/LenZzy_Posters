@@ -668,6 +668,14 @@ h3 {
   font-size: 1.1rem;
 }
 
+.size-warning {
+  background: #efffb0;
+  border-left: 6px solid var(--red);
+  line-height: 1.55;
+  margin: 24px 0 0;
+  padding: 16px 18px;
+}
+
 .sizes-back {
   margin-top: 28px;
 }
