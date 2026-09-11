@@ -232,10 +232,10 @@
             made and want to sell.
           </p>
         </div>
-        <form class="request-form">
+        <form class="request-form" id="poster-request-form">
           <label>
             Email
-            <input name="email" type="email" placeholder="yourname@email.com" />
+            <input name="email" type="email" placeholder="yourname@email.com" required />
           </label>
           <label>
             Poster style
@@ -259,7 +259,7 @@
           </label>
           <label>
             Your idea
-            <textarea name="idea" rows="4" placeholder="Car, quote, image, colors, size, vibe..."></textarea>
+            <textarea name="idea" rows="4" placeholder="Car, quote, image, colors, size, vibe..." required></textarea>
           </label>
           <p class="form-note">
             Other poster types are welcome too. Describe your idea and send the
@@ -272,7 +272,7 @@
             getting. Hopefully, we won’t need to go through a return —
             especially with larger posters, since they can be expensive to make!
           </p>
-          <a class="button primary" href="mailto:Zaguini757@outlook.com?subject=Custom%20LenZz_Posters%20Request">Email my poster idea</a>
+          <button class="button primary" type="submit">Email my poster idea</button>
         </form>
       </section>
     </main>
