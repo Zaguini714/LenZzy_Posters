@@ -528,8 +528,11 @@ h3 {
 
 .poster-idea-card img {
   background: #05070b;
+  display: block;
   height: auto;
+  max-height: 620px;
   object-fit: contain;
+  width: 100%;
 }
 
 .size-guide-card {
