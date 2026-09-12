@@ -706,6 +706,27 @@ h3 {
   margin-top: 28px;
 }
 
+.payment-banner {
+  background: var(--ink);
+  color: var(--white);
+  padding: clamp(36px, 6vw, 72px) clamp(18px, 5vw, 70px);
+  text-align: center;
+}
+
+.payment-banner h2 {
+  color: var(--white);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  margin: 8px auto 12px;
+  max-width: 1000px;
+}
+
+.payment-banner p:last-child {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 680px;
+}
+
 .tool-card {
   background:
     linear-gradient(135deg, rgba(17, 19, 24, 0.85), rgba(217, 47, 39, 0.58)),
