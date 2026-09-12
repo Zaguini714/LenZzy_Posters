@@ -1,7 +1,6 @@
 const filterButtons = document.querySelectorAll(".filter-button");
 const posterCards = document.querySelectorAll(".poster-card");
 const viewCount = document.querySelector("#view-count");
-const posterRequestForm = document.querySelector("#poster-request-form");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
@@ -32,22 +31,3 @@ if (viewCount) {
   localStorage.setItem("lenzzPosterViews", String(nextViews));
   viewCount.textContent = nextViews.toLocaleString();
 }
-
-posterRequestForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(posterRequestForm);
-  const emailBody = [
-    `Customer email: ${formData.get("email")}`,
-    `Poster style: ${formData.get("style")}`,
-    `Image source: ${formData.get("source")}`,
-    "",
-    `Idea: ${formData.get("idea")}`,
-  ].join("\n");
-
-  const mailto = `mailto:Zaguini757@outlook.com?subject=${encodeURIComponent(
-    "Custom LenZz Posters Request",
-  )}&body=${encodeURIComponent(emailBody)}`;
-
-  window.location.href = mailto;
-});
