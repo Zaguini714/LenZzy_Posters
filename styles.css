@@ -668,6 +668,32 @@ h3 {
   font-size: 1.1rem;
 }
 
+.custom-options {
+  display: grid;
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.custom-options h2 {
+  margin: 0;
+}
+
+.custom-options article {
+  background: var(--white);
+  border-left: 6px solid var(--red);
+  padding: 22px 24px;
+}
+
+.custom-options h3 {
+  margin: 0;
+}
+
+.custom-options p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 10px 0 0;
+}
+
 .size-warning {
   background: #efffb0;
   border-left: 6px solid var(--red);
